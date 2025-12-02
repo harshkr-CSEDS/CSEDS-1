@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Experiment - Flexbox Student Profile Card</title> 
+<style> 
+body{ 
+font-family: Arial, sans-serif; 
+margin: 20px; 
+background: #b27c7c; 
+} 
+h2{text-align: center;} 
+    .container{ 
+      display: flex;                  
+      flex-direction: row;            
+      justify-content: center;        
+      align-items: center;            
+         gap: 20px;                       
+      flex-wrap: wrap;                
+    } 
+    .card{ 
+      background: #414f98; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      width: 220px; 
+      text-align: center; 
+      padding: 16px; 
+    } 
+    .avatar{ 
+      width: 70px; height: 70px; 
+      background: #17cf29; color: #064e74; 
+      border-radius: 50%; 
+      display: flex; justify-content: center; align-items: center; 
+      font-size: 20px; margin: 0 auto 12px; 
+    } 
+    .name{ font-weight: bold; font-size: 18px; } 
+    .detail{ font-size: 14px; color: #cd8519; margin: 2px 0; } 
+  </style> 
+</head> 
+<body> 
+  <h2>Student Profile CARD</h2> 
+  <div class="container"> 
+    <div class="card"> 
+      <div class="avatar">HK</div> 
+      <div class="name">HARSH KUMAR</div> 
+      <div class="detail">B.Tech - CSE</div> 
+      <div class="detail">Roll No: 2025B15410302</div> 
+      <div class="detail">1st Year</div> 
+  </div> 
+</body> 
+</html> 

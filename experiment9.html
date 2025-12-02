@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Product Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #8c2f2f;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Product grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 20px;
+    }
+
+    /* Product card */
+    .card {
+      background: #2b8f9e;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(113, 133, 55, 0.1);
+      padding: 16px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #88227e;
+      margin: 4px 0;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #b85e0f;
+    }
+
+    /* Breakpoint: Tablet (≤1024px) → 2 columns */
+    @media (max-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Breakpoint: Mobile (≤600px) → 1 column */
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Response Product Grid</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT6udDgy8dVre4qoyup5JY-Tja4JwvPiwDBJ9Qu5DIcCi3dtZDGLi76ykE7DbseVpogbywYCj2VnXNC838HloNKdpy4YxdSsVFmlrbU4B_p6ikhnT_fNa2thQ"alt="produc1">
+      <h3>ProducT1</h3>
+      <p>TOP QUALITY WITH BEST ANC IN MARKET</p>
+      <p class="price">$100000</p>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ84xa2NWWrfG-JJofY_qXzaMIPiyAkMqYoLmQCYvfNMdbH1QOL_NN-RbO8UGRzcL7VtWkVRV7rrdsZGPPG_iYSgN6pc7KpS9Rz3kPmp6a0TDrYafGULev_xAFO3Qtsby4-2sE2kg&usqp=CAc" alt="Product 2">
+      <h3>Product 2 [Mac Mini]</h3>
+      <p>Durable and stylish for daily use.</p>
+      <p class="price">₹9999999.99</p>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71N4hshhfNL._SX679_.jpg" alt="Product 3">
+      <h3>Oneplus 13</h3>
+      <p>Lightweight and comfortable.</p>
+      <p class="price">₹55555</p>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSmapJ4T6RMVF3Sia1N7R8Q61Uog3EhSc1uO5Vwq2r-dGQufZx9UOrRMCV1v6mLUFZHtNR-f56MhbfsmrQHvfFPrRaYgnKxBe_8gAwdhYcszP8VcVuNlr370A" alt="Product 4">
+      <h3>Product 4</h3>
+      <p>NEW GEN DESGIN WITH PREMIUM FEATURES WITHOUT HUGE PRICe.</p>
+      <p class="price">₹999</p>
+    </div>
+  </div>
+
+</body>
+</html>
